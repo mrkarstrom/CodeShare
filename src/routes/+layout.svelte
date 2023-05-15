@@ -6,8 +6,11 @@
 	// Most of your app wide CSS should be put in this file
 	import '../app.postcss';
 
-	import { AppShell, AppBar, Avatar, Drawer, drawerStore } from '@skeletonlabs/skeleton';
+	import { AppShell, AppBar, storeHighlightJs, Avatar, Drawer, drawerStore } from '@skeletonlabs/skeleton';
 	import Navigation from '$lib/components/Navigation.svelte';
+	import hljs from 'highlight.js'
+	import 'highlight.js/styles/github-dark.css'
+	storeHighlightJs.set(hljs);
 
 	function drawerOpen(): void {
 		drawerStore.open();
