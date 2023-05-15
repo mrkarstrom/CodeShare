@@ -1,10 +1,22 @@
 <script lang="ts">
+	import { snippetStore } from './../stores/SnippetStore.ts';
 	import CodeSnippetCard from "$lib/components/CodeSnippetCard.svelte";
 	let formData: CodeSnippetInput = {
 			title:"",
 			language: "html",
 			code: ""
 	}
+
+	snippetStore.set(
+		[
+			{
+				title: "My Snippets",
+				language: 'html',
+				code: `<div>This is a div</div>`,
+				favorite: false
+			}
+		]
+	)
 </script>
 
 <div class="container mx-auto flex h-full items-center justify-center">
