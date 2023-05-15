@@ -18,7 +18,7 @@
 			</label>
 			<label class="label" for="codesnippet">
 				<span>Code Snippet</span>
-				<textarea class="textarea rows-4"></textarea>
+				<textarea class="textarea" rows="4" placeholder="Enter your code snippet here..." ></textarea>
 			</label>
 		</div>
 	</div>
