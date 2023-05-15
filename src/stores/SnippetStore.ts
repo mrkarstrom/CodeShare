@@ -17,6 +17,7 @@ export function deleteSnippet(index: number){
     return snippets;
     })
 }
+
 export function toggleFavorite(index: number){
     let snippets = get(snippetStore)
     snippetStore.update(() => {
