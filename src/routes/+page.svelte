@@ -1,4 +1,6 @@
-<!-- YOU CAN DELETE EVERYTHING IN THIS PAGE -->
+<script lang="ts">
+	import CodeSnippetCard from "$lib/components/CodeSnippetCard.svelte";
+</script>
 
 <div class="container mx-auto flex h-full items-center justify-center">
 	<div class="grid min-w-full grid-cols-1 gap-4 md:min-w-[750px]">
@@ -21,5 +23,9 @@
 				<textarea class="textarea" rows="4" placeholder="Enter your code snippet here..." ></textarea>
 			</label>
 		</div>
+		<div class="text-center py-6">
+			<h2>My Code Snippets</h2>
+		</div>
+		<CodeSnippetCard />
 	</div>
 </div>
